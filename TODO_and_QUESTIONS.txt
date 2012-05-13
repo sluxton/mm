@@ -1,0 +1,17 @@
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Questions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1) what is the overall weather (precipitation) trend? over the span of the data, is it raining less each year?
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+To Do
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1) maintain the organization where each row of the data corresponds to a unique rain event. which is actually an individual "rain day". 
+
+2) The structure of the data is really fucking me up.  Each tree needs a unique ID.  But it should also have a treatment label, a block label, though I think the plot label is superfluous.
+
+
