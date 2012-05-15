@@ -1,6 +1,6 @@
 # data exploration on ppt pulse data
 library(AED)
-PPT <- read.table("ppt_pulse_output.txt", header = TRUE)
+PPT <- read.table("./Fixed_data/ppt_pulse_output.txt", header = TRUE)
 # head(PPT)
 PPT$fY <- factor(PPT$Year, levels = c("2007","2008","2009","2010","2011"))
 PPT$ftrt <- factor(PPT$trt, levels = c("1","2","3","4"))
@@ -10,7 +10,9 @@ PPT$fp.num <- factor(PPT$plot_num, levels = c("9","10","11","12"))
 # generating P using cbind makes all the vectors atomic; using data.frame preserves the vector classes
 P <- data.frame(PPT$fY, PPT$ftrt, PPT$fbl, PPT$fp.num, PPT$spp, PPT$tree, PPT$size, PPT$dry_days, PPT$pre_VPD, PPT$Ys.min.15.avg, PPT$Ys.min.20.avg, PPT$Ys.min.d.avg, PPT$Ys.max.15.avg, PPT$Ys.max.20.avg, PPT$Ys.max.d.avg, PPT$vwc.min.avg, PPT$vwc.max.avg, PPT$Js.pre, PPT$Js.D, PPT$Js.d2)
 
+# label 'em
 colnames(P) <- c("fY","ftrt","fblock","fp.num","spp","tree.num","size","dry.days","VPD.pre","Ymin.15", "Ymin.20","Ymin.d", "Ymax.15", "Ymax.20", "Ymax.d", "vwc.min","vwc.max","Js.pre", "Js.D","Js.d2")
+
 # calculate response as a ratio
 P$Js.r <- P$Js.D/P$Js.pre
 

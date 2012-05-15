@@ -1,4 +1,4 @@
-﻿5-6-2012
+5-6-2012
 
 Since I've just been toying around with R, I've just named my scripts with the date, so the 5-3-2012 file is the most recent one.
 
