@@ -37,8 +37,9 @@ e <- ggplot(Pd_one_ten, aes(y = size, x = Js.D, colour = ftrt)) + facet_wrap(~ t
 e + stat_smooth(method = lm) + geom_point()
 e + stat_smooth(method = lm)
 
-
 # a single tree index, each treatments  
+# number of points on each quadrant will be influenced by the available data
+# much missing data due to lightning, etc.
 ind <- ceiling(runif(1)*10)
 Pd_one <- subset(Pd, tree == ind)
 f <- ggplot(Pd_one, aes(y = size, x = Js.D, colour = ftrt)) + facet_wrap(~ ftrt, nrow = 2)
@@ -51,8 +52,8 @@ g <- ggplot(Pd_some, aes(y = size, x = Js.D, colour = factor(tree))) #+ geom_poi
 g + stat_smooth(method = lm, se = F, fullrange=T, size = 2) + facet_grid(ftrt ~ fY, scales = "free")
 
 # same as above but with non-parametric curves fitted rather that linear regressions
-ind <- sample.int(n = 10, size  = 3, replace = F)
-Pd_some <- subset(Pd, tree == ind[1] | tree == ind[2] | tree == ind[3])
+#ind <- sample.int(n = 10, size  = 3, replace = F)
+#Pd_some <- subset(Pd, tree == ind[1] | tree == ind[2] | tree == ind[3])
 h <- ggplot(Pd_some, aes(y = size, x = Js.D, colour = factor(tree))) #+ geom_point()
 h + stat_smooth(se = F, fullrange=T, size = 2) + facet_grid(ftrt ~ fY, scales = "free")
 
@@ -71,8 +72,4 @@ qplot(fY, data = Pd_single_minimal, geom="bar", weight = size, ylab ="mm of rain
 tot <- ddply(Pd_single_minimal, .(fY), summarise, total_rain = sum(size))
 # as a dotplot - doesn't really work
 j <- ggplot(tot, aes(total_rain, fY))
-j + geom_point() + ylab("") + xlab("mm of rain total")
-
-
-k <- ggplot(tot, aes(total_rain, fY))
-k + geom_area()
+j + geom_point(size = 10) + ylab("") + xlab("mm of rain total")
