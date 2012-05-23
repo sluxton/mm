@@ -62,14 +62,9 @@ Pd_single <- subset(Pd, tree == 1 & ftrt ==1)
 h <- ggplot(Pd_single, aes(size)) + geom_histogram(binwidth = 5) 
 h + facet_grid(. ~ fY)
 
-hist(Pd_single$size, main = "Rain Event Distribution  (thresholded above 3mm)", xlab = "mm of rain")
+hist(Pd_single$size, main = "Rain Event Distribution (thresholded above 3mm)", xlab = "mm of rain")
 summary(Pd_single$size)
 
 # total rain (excluding small <3mm events)
 Pd_single_minimal <- Pd_single[, c("fY", "size")]
 qplot(fY, data = Pd_single_minimal, geom="bar", weight = size, ylab ="mm of rain", xlab = "") 
-# quick check/ddply practice
-tot <- ddply(Pd_single_minimal, .(fY), summarise, total_rain = sum(size))
-# as a dotplot - doesn't really work
-j <- ggplot(tot, aes(total_rain, fY))
-j + geom_point(size = 10) + ylab("") + xlab("mm of rain total")

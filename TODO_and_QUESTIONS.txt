@@ -5,6 +5,10 @@ Questions
 
 1) For Duncan: In Plots 1-8, the Js record starts later than in P9-12. Is there any reason to include "events" in those plots that are earlier than the earliest Js data? The only data that would exist then would be the event size and the 5 cm VWC. But would having that help model prior conditions? If you want I can leave those events in even if they are missing the response variable, or I can remove lines with no response variable and make the dataset smaller. Whichever you like.
 
+ - If we decide it's possible to model at the tree level then we will only want events which correspond to Js response data. 
+
+2) Jen: It seems like we may need to move to treating Js as the response variable across plots.  Unfortunately, If we end up treating Js as a plot-wide response (I think) we lose the ability to model tree-level response. If the golden chalice is trying to obtain a predictive model for tree decline we need to start considering the extent of missing data at the tree level.  It's possible that we can still do it, if there's enough data.
+
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 To Do

@@ -1,0 +1,28 @@
+﻿This is what Tim typed in the Terminal window to install the AED package for R:
+
+which R
+
+R CMD INSTALL /Library/Frameworks/R.framework/Versions/2.13/Resources/AED/
+
+Full transcript:
+
+Last login: Wed Apr 18 08:44:16 on console
+d00-129:~ jenniferplaut$ which R
+/usr/bin/R
+d00-129:~ jenniferplaut$ R CMD INSTALL /Library/Frameworks/R.framework/Versions/ 
+2.13/    Current/ 
+d00-129:~ jenniferplaut$ R CMD INSTALL /Library/Frameworks/R.framework/Versions/Current/
+Headers/        PrivateHeaders/ R               Resources/
+d00-129:~ jenniferplaut$ R CMD INSTALL /Library/Frameworks/R.framework/Versions/2.13/
+Headers/        PrivateHeaders/ R               Resources/
+d00-129:~ jenniferplaut$ R CMD INSTALL /Library/Frameworks/R.framework/Versions/2.13/Resources/
+AED/          NEWS.pdf      bin/          include/      modules/
+COPYING       R             doc/          lib/          share/
+Info.plist    Rscript       etc/          library/      
+NEWS          SVN-REVISION  fontconfig/   man1/         
+d00-129:~ jenniferplaut$ R CMD INSTALL /Library/Frameworks/R.framework/Versions/2.13/Resources/AED/
+* installing to library ‘/Library/Frameworks/R.framework/Versions/2.13/Resources/library’
+* installing *binary* package ‘AED’ ...
+
+* DONE (AED)
+d00-129:~ jenniferplaut$ 
