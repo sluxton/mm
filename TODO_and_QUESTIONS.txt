@@ -3,9 +3,7 @@
 Questions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1) what is the overall weather (precipitation) trend? over the span of the data, is it raining less each year?
-
-2) when is the deadline? when must this be presented?
+1) For Duncan: In Plots 1-8, the Js record starts later than in P9-12. Is there any reason to include "events" in those plots that are earlier than the earliest Js data? The only data that would exist then would be the event size and the 5 cm VWC. But would having that help model prior conditions? If you want I can leave those events in even if they are missing the response variable, or I can remove lines with no response variable and make the dataset smaller. Whichever you like.
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -14,6 +12,18 @@ To Do
 
 1) maintain the organization where each row of the data corresponds to a unique rain event. which is actually an individual "rain day". 
 
-2) The structure of the data is really fucking me up.  Each tree needs a unique ID.  But it should also have a treatment label, a block label, though I think the plot label is superfluous.
+2) The structure of the data is really fucking me up.  Each tree needs a unique ID.  But it should also have a treatment label, a block label.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Schedule/Action Items
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1) One level modeled by the end of May.
+
+2) Talk weekly, Tuesday mornings if possible.
+
+3) Finish the output tables for remaining plots - but be prepared to modify the methods for obtaining response/covariates
+
 
 
