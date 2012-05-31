@@ -9,14 +9,9 @@ Questions
 
 2) Jen: It seems like we may need to move to treating Js as the response variable across plots.  Unfortunately, If we end up treating Js as a plot-wide response (I think) we lose the ability to model tree-level response. If the golden chalice is trying to obtain a predictive model for tree decline we need to start considering the extent of missing data at the tree level.  It's possible that we can still do it, if there's enough data.
 
-
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 To Do
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-1) maintain the organization where each row of the data corresponds to a unique rain event. which is actually an individual "rain day". 
-
-2) The structure of the data is really fucking me up.  Each tree needs a unique ID.  But it should also have a treatment label, a block label.
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -26,8 +21,6 @@ Schedule/Action Items
 1) One level modeled by the end of May.
 
 2) Talk weekly, Tuesday mornings if possible.
-
-3) Finish the output tables for remaining plots - but be prepared to modify the methods for obtaining response/covariates
 
 
 
